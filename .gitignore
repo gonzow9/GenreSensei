@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+.DS_Store
+venv/
+*.pyc
+data_gtzan.json
+trained_models/
+artifacts/
+*.wav
+*.mp3
+*.mp4
+Data 2/

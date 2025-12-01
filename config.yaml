@@ -1,0 +1,34 @@
+dataset:
+  root: Data 2/genres_original
+  json_cache: data_gtzan.json
+  sample_rate: 22050
+  duration: 30
+  num_segments: 5
+  n_mfcc: 13
+  n_fft: 2048
+  hop_length: 512
+  max_files_per_genre:
+
+training:
+  test_size: 0.25
+  random_state: 10
+  stratify: true
+
+svm:
+  c_stats: 100.0
+  c_flat: 1.0
+  c_hybrid: 10.0
+  kernel: rbf
+  gamma: scale
+
+cnn:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.0001
+  dropout: 0.3
+  filters: [32, 32, 32]
+
+artifacts:
+  base_dir: artifacts
+  models_dir: trained_models
+  reports_dir: artifacts/reports
