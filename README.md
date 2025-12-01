@@ -7,7 +7,7 @@ GTZAN genre-classification with pipelines, interpretability hooks, and docs.
 - Baselines (MFCC + SVM) vs. deep (CNN) vs. extensible embeddings (OpenL3/CLAP).
 - Designed for fast verification: cached MFCCs, reproducible seeds, and artifact logging.
 
-## Quickstart (Python 3.10/3.11 recommended)
+## Quickstart
 ```
 python3.11 -m venv venv && source venv/bin/activate
 pip install --upgrade pip
